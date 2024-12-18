@@ -2,6 +2,10 @@
 
 This Streamlit application provides an HR chatbot interface for employees to inquire about their leave balance.
 
+See more details in the blog written in Thai language:
+
+[HR APP with Streamlit + Cloud Run + Gemini + Cloud SQL with authentication through Azure AD](https://medium.com/google-cloud-thailand/hr-app-เช็ควันลาแบบลูกทุ่งจานด่วนโดยใช้-streamlit-ผ่าน-cloud-run-gemini-cloud-sql-และทำ-2fbce13ab119)
+
 ### Description
 
 The application leverages:
@@ -40,6 +44,9 @@ The project dependencies are listed in `requirements.txt`.
     * `POSTGRES_PASSWORD`: The password for your PostgreSQL database.
     * `PROJECT_ID`: Your Google Cloud Project ID for Vertex AI.
     * `REGION`: The region where your Vertex AI endpoint is located.
+5. See the [blog](https://medium.com/google-cloud-thailand/hr-app-เช็ควันลาแบบลูกทุ่งจานด่วนโดยใช้-streamlit-ผ่าน-cloud-run-gemini-cloud-sql-และทำ-2fbce13ab119) for more details on
+   * creating the Postgres database on Cloud SQL
+   * packing the image and deploy on Cloud Run
 
 ### Usage
 
@@ -50,4 +57,9 @@ The project dependencies are listed in `requirements.txt`.
 
 **Note:** Submitting leave requests is not yet implemented in this version.
 
+### References
+
+The Azure AD authentication was inspired by and incorporates ideas from Parham's great blog post:
+- [Streamlit login with Azure AD Authentication](https://medium.com/@prhmma/streamlit-login-with-azure-ad-authentication-66ebd1691858)
+- [GitHub Repository: Streamlit Authentication with Azure AD](https://github.com/Prhmma/Streamlit_Azure_AD)
 
